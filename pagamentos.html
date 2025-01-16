@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitea_Cartola</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(253, 144, 18);
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    header img {
+        vertical-align: middle;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas caixas por linha */
+        gap: 20px; /* Espaçamento entre as caixas */
+        width: 96%; /* Largura do container */
+        margin-top: 20px;
+    }
+    .team-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background-color: white;
+        height: auto;
+    }
+    .team-box img {
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .team-box h2 {
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 10px;
+    }
+    .ajuste {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fixa {
+        height: 30px;
+        width: 150px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .but {
+        height: 30px;
+        width: 100px;
+        background-color: rgb(253, 144, 18);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .total, .history {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .history {
+        max-height: 100px;
+        overflow-y: auto;
+        width: 80%;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-box {
+
+            padding: 10px;
+            color: rgb(46, 45, 45);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+<body>
+    <header>
+        <h1>Cariocas Champions <img src="image-removebg-preview (1).png" width="70px" alt="Logo"></h1>
+    </header>
+    <main>
+        <!-- Caixa para cada time -->
+        <div class="team-box" id="team1">
+            <img src="image-removebg-preview (6).png" alt="Escudo Flamengo">
+            <h2>Flamengo RJW</h2>
+            <div class="ajuste">
+                <input type="number" placeholder="PAGAMENTO" id="input1" class="fixa">
+                <button class="but" onclick="addPayment('input1', 'total1', 'history1', 'team1')">SOMAR</button>
+            </div>
+            <div class="total">
+                TOTAL: R$ <span id="total1">0.00</span>
+            </div>
+            <div class="history" id="history1">
+                <strong>Histórico de Pagamentos</strong>
+            </div>
+        </div>
+
+        <div class="team-box" id="team2">
+            <img src="image-removebg-preview (5).png" alt="Escudo Barcelona">
+            <h2>Barcelona Ofici@l</h2>
+            <div class="ajuste">
+                <input type="number" placeholder="PAGAMENTO" id="input2" class="fixa">
+                <button class="but" onclick="addPayment('input2', 'total2', 'history2', 'team2')">SOMAR</button>
+            </div>
+            <div class="total">
+                TOTAL: R$ <span id="total2">0.00</span>
+            </div>
+            <div class="history" id="history2">
+                <strong>Histórico de Pagamentos</strong>
+            </div>
+        </div>
+
+        <div class="team-box" id="team3">
+            <img src="image-removebg-preview (4).png" alt="Escudo Familia Unida">
+            <h2>Fclfamiliaunida</h2>
+            <div class="ajuste">
+                <input type="number" placeholder="PAGAMENTO" id="input3" class="fixa">
+                <button class="but" onclick="addPayment('input3', 'total3', 'history3', 'team3')">SOMAR</button>
+            </div>
+            <div class="total">
+                TOTAL: R$ <span id="total3">0.00</span>
+            </div>
+            <div class="history" id="history3">
+                <strong>Histórico de Pagamentos</strong>
+            </div>
+        </div>
+
+        <div class="team-box" id="team4">
+            <img src="image-removebg-preview (2).png" alt="Escudo Fla Louca">
+            <h2>FLA LOUCA</h2>
+            <div class="ajuste">
+                <input type="number" placeholder="PAGAMENTO" id="input4" class="fixa">
+                <button class="but" onclick="addPayment('input4', 'total4', 'history4', 'team4')">SOMAR</button>
+            </div>
+            <div class="total">
+                TOTAL: R$ <span id="total4">0.00</span>
+            </div>
+            <div class="history" id="history4">
+                <strong>Histórico de Pagamentos</strong>
+            </div>
+        </div>
+        <div class="team-box" id="team5">
+            <img src="image-removebg-preview (3).png" alt="Escudo Fla Louca">
+            <h2>FLA LOUCA</h2>
+            <div class="ajuste">
+                <input type="number" placeholder="PAGAMENTO" id="input5" class="fixa">
+                <button class="but" onclick="addPayment('input5', 'total5', 'history5', 'team5')">SOMAR</button>
+            </div>
+            <div class="total">
+                TOTAL: R$ <span id="total5">0.00</span>
+            </div>
+            <div class="history" id="history5">
+                <strong>Histórico de Pagamentos</strong>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-box">
+        <p>© 2025 Iara de Castro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+     function saveData(teamId, total, history) {
+        localStorage.setItem(teamId, JSON.stringify({ total, history }));
+    }
+
+    function loadData(teamId, totalId, historyId) {
+        const data = JSON.parse(localStorage.getItem(teamId));
+        if (data) {
+            document.getElementById(totalId).textContent = data.total.toFixed(2);
+
+            const historyElement = document.getElementById(historyId);
+            data.history.forEach(record => {
+                addRecordToHistory(historyElement, record.amount, record.id);
+            });
+        }
+    }
+
+    function addPayment(inputId, totalId, historyId, teamId) {
+        const inputElement = document.getElementById(inputId);
+        const totalElement = document.getElementById(totalId);
+        const historyElement = document.getElementById(historyId);
+
+        const inputValue = parseFloat(inputElement.value);
+        const currentTotal = parseFloat(totalElement.textContent);
+
+        if (!isNaN(inputValue) && inputValue > 0) {
+            const newTotal = currentTotal + inputValue;
+            totalElement.textContent = newTotal.toFixed(2);
+
+            const recordId = Date.now(); // ID único para cada registro
+            addRecordToHistory(historyElement, inputValue, recordId);
+
+            const existingData = JSON.parse(localStorage.getItem(teamId)) || { total: 0, history: [] };
+            existingData.total = newTotal;
+            existingData.history.push({ amount: inputValue, id: recordId });
+            saveData(teamId, existingData.total, existingData.history);
+
+            inputElement.value = '';
+        } else {
+            alert('Por favor, insira um valor válido.');
+        }
+    }
+
+    function addRecordToHistory(historyElement, amount, id) {
+        const paymentRecord = document.createElement('p');
+        paymentRecord.style.color = 'green';
+        paymentRecord.textContent = `+ R$ ${amount.toFixed(2)}`;
+        paymentRecord.dataset.id = id;
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'X';
+        deleteButton.style.marginLeft = '10px';
+        deleteButton.style.color = 'red';
+        deleteButton.onclick = function () {
+            removePayment(historyElement, id);
+        };
+
+        paymentRecord.appendChild(deleteButton);
+        historyElement.appendChild(paymentRecord);
+    }
+
+    function removePayment(historyElement, id) {
+        const teamId = historyElement.id.replace('history', 'team');
+        const totalId = historyElement.id.replace('history', 'total');
+        const totalElement = document.getElementById(totalId);
+
+        let data = JSON.parse(localStorage.getItem(teamId));
+        const recordIndex = data.history.findIndex(record => record.id === id);
+
+        if (recordIndex > -1) {
+            const record = data.history.splice(recordIndex, 1)[0];
+            const newTotal = parseFloat(totalElement.textContent) - record.amount;
+            totalElement.textContent = newTotal.toFixed(2);
+
+            saveData(teamId, newTotal, data.history);
+
+            const recordElement = Array.from(historyElement.children).find(el => el.dataset.id == id);
+            if (recordElement) historyElement.removeChild(recordElement);
+        }
+    }
+
+    window.onload = function () {
+    for (let i = 1; i <= 5; i++) {
+        loadData(`team${i}`, `total${i}`, `history${i}`);
+    }
+};
+</script>
+</html>

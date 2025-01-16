@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site_Cartola</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1> Cariocas Champions <img src="image-removebg-preview (1).png" height="auto" width="70px"> </h1>    
+        <a href="regras.html" class="pag-header">
+            <img src="re.png" alt="Regras">
+        </a>
+    </header>
+    <main>
+        <!-- Ganhadores -->
+        <div class="carrossel-container">
+            <div class="carrossel" id="carrossel">
+                <section class="slide">
+                    <h2>📢 Ganhador da Rodada</h2>
+                    <p class="nomes" id="ganhadorRodada">Aguardando...</p>
+                </section>
+                <section class="slide">
+                    <h2>🏆 Ganhador do Mês</h2>
+                    <p class="nomes" id="ganhadorMes">Aguardando...</p>
+                </section>
+                <section class="slide">
+                    <h2>🏆 Ganhador do Ano</h2>
+                    <p class="nomes" id="ganhadorAno">Aguardando...</p>
+                </section>
+            </div>
+            <div class="nav-buttons">
+                <button id="prevSlide"> < </button>
+                <button id="nextSlide"> > </button>
+            </div>
+        </div>
+        <section id="teams">
+            <div class="inbox">
+                    <img src="image-removebg-preview (6).png" class="escudo" width="60px" height="60px">
+                    <h2> Flamengo RJW</h2>
+                <div class="pontuacao">
+                     <input type="number" placeholder="Pts" id="inputA">
+                    <button onclick="addPoints('A')">ADICIONAR</button>
+                    <ul id="historyA"></ul>
+                 </div>
+                <div class="total">
+                    <p>TOTAL <span id="reA">0</span></p>
+                </div>
+            
+            </div>
+            <div class="inbox">
+                    <img src="image-removebg-preview (5).png" class="escudo" width="60px" height="60px">
+                    <h2> Barcelona Ofici@l</h2>
+                <div class="pontuacao">
+                    <input type="number" placeholder="Pts" id="inputB">
+                    <button onclick="addPoints('B')">ADICIONAR</button>
+                    <ul id="historyB"></ul>
+                </div>
+         
+                <div class="total">
+                    <p>TOTAL <span id="reB">0</span></p>
+                </div>
+            </div>
+            <div class="inbox">
+                    <img src="image-removebg-preview (4).png" class="escudo" width="60px" height="60px">
+                    <h2> Fclfamiliaunida</h2>
+                <div class="pontuacao">
+                    <input type="number" placeholder="Pts" id="inputC">
+                    <button onclick="addPoints('C')">ADICIONAR</button>
+                    <ul id="historyC"></ul>
+                </div>
+                <div class="total">
+                    <p>TOTAL <span id="reC">0</span></p>
+                </div>
+            </div>
+        
+            <div class="inbox">
+                    <img src="image-removebg-preview (2).png" class="escudo" width="60px" height="60px">
+                    <h2> FLA LOUCA</h2>
+                <div class="pontuacao">
+                    <input type="number" placeholder="Pts" id="inputD">
+                    <button onclick="addPoints('D')">ADICIONAR</button>
+                    <ul id="historyD"></ul>
+                </div>
+                <div class="total">
+                    <p>TOTAL <span id="reD">0</span></p>
+                </div>
+            </div>
+            <div class="inbox">
+                    <img src="image-removebg-preview (3).png" class="escudo" width="60px" height="60px">
+                    <h2> TEAM D1AMOND</h2>
+                <div class="pontuacao">
+                    <input type="number" placeholder="Pts" id="inputE">
+                    <button onclick="addPoints('E')">ADICIONAR</button>
+                    <ul id="historyE"></ul>
+                </div>
+                <div class="total">
+                    <p>TOTAL <span id="reE">0</span></p>
+                </div>
+            </div>
+            
+        </section>
+         <!-- Ranking -->
+        <div class="ranking">
+                    <h1>RANKING</h1>
+            <div class="organizar">
+                    <ul class="ranking-list" id="rankingList"></ul>
+                <div class="monthly-winner" id="monthlyWinner"></div>
+                <div class="total-winner" id="totalWinner"></div>
+            </div>
+            <a href="pagamentos.html" class="pag-ranking">
+                <img src="dinh.png" alt="Pagamentos">
+            </a>
+            <div class="congrats-section" >
+                <h2>🎉 Parabéns aos Ganhadores!</h2>
+                <p class="nomes" id="ganhadorRodada"><strong>Ganhador da Rodada:</strong> <span id="parabensRodada">Aguardando...</span></p>
+                <p  class="nomes" id="ganhadorMes"><strong>Ganhador do Mês:</strong> <span id="parabensMes">Aguardando...</span></p>
+                <p class="nomes" id="ganhadorAno"><strong>Ganhador do Ano:</strong> <span id="parabensAno">Aguardando...</span></p>
+            </div>            
+        </div>   
+    </main>
+    <footer class="footer-box">
+        <p>© 2025 Iara de Castro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
