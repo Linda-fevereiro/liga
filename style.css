@@ -144,7 +144,7 @@ h2{
 
 }
 .escudo{
-    margin-right: 10px; /* Espaço entre a imagem e o título */
+    margin-right: 5px; /* Espaço entre a imagem e o título */
   width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto; /* Mantém a proporção da imagem */
 }
@@ -156,7 +156,7 @@ h2{
 }
 
 input{
-    width: 50px;
+    width: 40px;
     border: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
@@ -173,7 +173,7 @@ button{
     cursor: pointer;
 }
 .total {
-    margin-left: 50px;
+    margin-left: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     display: flex;
