@@ -13,13 +13,13 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(253, 144, 18);
     color: white;
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-direction: column;
      justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    font-size: 19px;
+    font-size: 18px;
     
 }
 
@@ -34,7 +34,7 @@ img{
     flex-direction: column;
     justify-content: center;
     float: right;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 main{
     display: flex;
@@ -297,6 +297,7 @@ a.pag-header img {
     width: 50px;
     height: auto;
     border-radius: 50%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 a.pag-ranking {
