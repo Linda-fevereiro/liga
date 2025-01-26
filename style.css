@@ -1,81 +1,71 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s, color 0.3s;
 }
-header{
+header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(253, 144, 18);
     color: white;
-    width: 99%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-     justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     font-size: 18px;
-    
+    text-align: center;
 }
-
 header button {
     cursor: pointer;
+    font-size: 14px;
 }
-h1{
+h1 {
     margin-top: 10px;
+    font-size: 22px;
 }
-img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    float: right;
-    margin-right: 5px;
+img {
+    max-width: 100%;
+    height: auto;
 }
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 98%;
+    width: 100%;
+    padding: 10px;
 }
-
 .carrossel-container {
     position: relative;
-    width: 98%;
+    width: 100%;
     max-width: 400px;
     overflow: hidden;
-    margin: 50px auto;
+    margin: 20px auto;
 }
 .carrossel {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     transition: transform 0.5s ease;
-    margin-right: 10px;
 }
 .slide {
-    min-width: 98%;
-    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.226);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-
+    min-width: 100%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
 }
 .slide h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 21px;
+    font-family: Georgia, serif;
+    font-size: 18px;
 }
 .slide p {
     font-family: Cambria, serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 5px;
 }
 .nav-buttons {
@@ -83,276 +73,89 @@ main{
     justify-content: space-between;
     position: absolute;
     top: 50%;
-    width: 98%;
+    width: 100%;
     transform: translateY(-50%);
 }
 .nav-buttons button {
     border: 0;
     padding: 10px;
-    color: rgba(0, 0, 0, 0.534);
-    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 90px;
-}
-h2{
-    margin-top: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
 }
 .footer {
     text-align: center;
     padding: 10px;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 98%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .footer-box {
-  
-              padding: 10px;
-           
-              color: rgb(46, 45, 45);
-              position: relative;
-              bottom: 0;
-              width: 100%;
-              height: 50px;
-              box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-              display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-.inbox, .ranking{
-    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.226);
-    display: flex;
-    align-items: center; 
-    width: 96%;
-    padding: 20px;
-    margin-top: 10px;
-    
+    width: 100%;
+    background: #000;
 }
-h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    
-
-}
-.escudo{
-    margin-right: 10px; /* Espaço entre a imagem e o título */
-  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
-}
-.pontuacao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 70px;
-}
-
-input{
-    width: 60px;
-    border: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-
-}
-button{
-    border: 0;
-    font-size: 12px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgba(0, 0, 0, 0.719);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-}
-.total {
-    margin-left: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#reA, #reB, #reC, #reD, #reE {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: green;
+.inbox, .ranking {
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #fff;
 }
 .ranking h1 {
-    font-size: 25px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-}
-.ranking-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    
-  
+    font-size: 22px;
 }
 .ranking-list li {
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 5px 0;
-    padding: 5px;
-    margin-top: 5px;
+    font-size: 16px;
 }
 .points-list {
-    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(255, 166, 0);
+}
+.monthly-winner {
     font-size: 16px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color: rgb(255, 166, 0);
 }
-.monthly-winner{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: green;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.organizar{
-    display: flex;
-    flex-direction: column;
-   width: 96%;
+.organizar {
+    width: 100%;
     justify-content: center;
-}
-.ranking{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 96%;
-    
-}
-.total-winner {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: rgb(253, 144, 18);
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #teams {
     display: flex;
-  flex-direction: column;
-    gap: 20px;
-  
-  
-    align-items: center; 
-    width: 98%;
-   
-    margin-top: 10px;
-    
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
 }
-
 .team {
-    flex: 1 1 calc(50% - 40px);
-    border: 1px solid #ddd;
+    width: 100%;
     padding: 10px;
-    background: #fff;
-}
-
-#ranking {
-    margin: 20px;
+    background: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 600px) {
-    #teams {
-        flex-direction: column;
+    header {
+        font-size: 16px;
     }
-
+    .carrossel-container {
+        max-width: 100%;
+    }
+    .slide {
+        padding: 10px;
+    }
+    .nav-buttons button {
+        font-size: 14px;
+    }
+    .footer {
+        font-size: 14px;
+    }
+    .ranking h1 {
+        font-size: 18px;
+    }
+    .ranking-list li {
+        font-size: 14px;
+    }
+    .points-list {
+        font-size: 12px;
+    }
     .team {
-        flex: 1 1 100%;
+        padding: 8px;
     }
-}
-
-
-
-button:hover {
-    background-color: #0057b32a;
-}
-.history {
-    font-size: 0.9rem;
-    margin-top: 10px;
-    color: #555;
-}
-a.pag-header {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    z-index: 10;
-    text-decoration: none;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-a.pag-header img {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-a.pag-ranking {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 999;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-a.pag-ranking img {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-}
-.congrats-section {
-    margin-top: 20px;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.575);
-    border-radius: 8px;
-    width: 36%;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.congrats-section h2 {
-    color: #28a745;
-    margin-bottom: 24px;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.congrats-section p {
-    font-size: 18px;
-    margin: 5px 0;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 10px;
-
-}
-#parabensRodada{
-    font-weight:bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.137);
-
-}
-#parabensMes{
-    font-weight:bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.089);
-
-}
-#parabensAno{
-    font-weight:bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.089);
-
 }
