@@ -152,11 +152,11 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 input{
-    width: 60px;
+    width: 50px;
     border: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
