@@ -46,7 +46,7 @@ main{
 
 .carrossel-container {
     position: relative;
-    width: 100%;
+    width: 98%;
     max-width: 400px;
     overflow: hidden;
     margin: 50px auto;
@@ -59,7 +59,7 @@ main{
     margin-right: 10px;
 }
 .slide {
-    min-width: 100%;
+    min-width: 98%;
     box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.226);
     padding: 20px;
     display: flex;
@@ -83,7 +83,7 @@ main{
     justify-content: space-between;
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 98%;
     transform: translateY(-50%);
 }
 .nav-buttons button {
