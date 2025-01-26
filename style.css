@@ -131,62 +131,12 @@ h2{
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.226);
     display: flex;
     align-items: center; 
-    width: 90%;
+    width: 98%;
     padding: 20px;
     margin-top: 10px;
     
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    header {
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .carrossel-container {
-        margin: 10px auto;
-    }
-
-    .slide h2, .slide p {
-        font-size: 14px;
-    }
-
-    .nav-buttons button {
-        font-size: 12px;
-        padding: 8px;
-    }
-
-    .footer {
-        padding: 8px;
-    }
-
-    .footer-box {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 18px;
-    }
-
-    .slide h2, .slide p {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 12px;
-    }
-
-    .nav-buttons button {
-        padding: 6px;
-    }
-}
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -341,11 +291,12 @@ a.pag-header img {
 
 a.pag-ranking {
     position: fixed;
-    right: 2px;
+    right: 1px;
     bottom: 20px;
     z-index: 999;
     border-radius: 50%;
     overflow: hidden;
+    left: 10px;
 }
 
 a.pag-ranking img {
