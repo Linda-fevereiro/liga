@@ -289,15 +289,6 @@ a.pag-header img {
     border-radius: 50%;
 }
 
-a.pag-ranking {
-    position: fixed;
-    right: 1px;
-    bottom: 20px;
-    z-index: 999;
-    border-radius: 50%;
-    overflow: hidden;
-    left: 10px;
-}
 
 a.pag-ranking img {
     width: 50px;
